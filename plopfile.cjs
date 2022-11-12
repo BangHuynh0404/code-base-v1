@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = (plop) => {
   // COMPONENT GENERATOR
   plop.setGenerator("component", {
