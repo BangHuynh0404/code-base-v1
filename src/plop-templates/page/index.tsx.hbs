@@ -1,0 +1,15 @@
+import React from 'react';
+
+import Styles{{pascalCase name}} from './styled';
+
+import {{pascalCase name}}Container from '../../containers/{{pascalCase name}}';
+
+interface {{pascalCase name}}Props {}
+
+const {{pascalCase name}}Page: React.FC<{{pascalCase name}}Props> = (props) => (
+  <Styles{{pascalCase name}} className="p-{{camelCase name}}">
+    <{{pascalCase name}}Container {...props} />
+  </Styles{{pascalCase name}}>
+);
+
+export default {{pascalCase name}}Page;
