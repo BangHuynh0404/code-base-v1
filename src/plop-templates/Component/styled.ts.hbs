@@ -1,18 +1,15 @@
 {{!-- import styled, { css } from "styled-components"; --}}
-import styled from "@emotion/styled"
-import { css } from "@emotion/react"
-import { {{pascalCase name}}Props } from ".";
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
-interface Styled{{pascalCase name}}Props extends {{pascalCase name}}Props {
-   // Custom Props
-};
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface Styled{{pascalCase name}}Props {}
 
-const Styled{{pascalCase name}} = styled.div`${(props: Styled{{pascalCase name}}Props) => {
-   let root = "{{classNameComponent type}}{{camelCase name}}";
-   return css`
-   
-   `;
-}}
+const Styled{{pascalCase name}} = styled.div`
+  ${(props: StyledTestProps) => {
+    const root = '{{classNameComponent type}}{{camelCase name}}';
+    return css``;
+  }}
 `;
 
 export default Styled{{pascalCase name}};
