@@ -1,13 +1,16 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
+import Query from './lib/react-query/QueryWrapper';
 
-function App() {
+import RouterWrapper from './lib/react-router-dom';
+
+const App = () => {
   return (
     <div className="App">
-      <h1>app</h1>
+      <Query>
+        <RouterWrapper />
+      </Query>
     </div>
   );
-}
+};
 
 export default App;

@@ -18,9 +18,12 @@
     "types": ["vitest/globals"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@components/*": ["./src/components/*"]
     }
   },
-  "include": ["src", "plopfile.cjs","vite.config.ts", ".eslintrc.cjs", "setupTests.ts"],
+  "include": ["src", "plopfile.cjs","vite.config.ts", ".eslintrc.cjs", "setupTests.ts", "/.storybook/preview.cjs", "/.storybook/main.cjs"],
+  "exclude": [],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
